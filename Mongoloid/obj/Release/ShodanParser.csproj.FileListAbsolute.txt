@@ -1,0 +1,15 @@
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\bin\Release\ShodanParser.exe.config
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\bin\Release\ShodanParser.exe
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\bin\Release\ShodanParser.pdb
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\bin\Release\CsvHelper.dll
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\bin\Release\CsvHelper.xml
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\MainWindow.g.cs
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\App.g.cs
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\ShodanParser_MarkupCompile.cache
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\ShodanParser_MarkupCompile.lref
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\MainWindow.baml
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\ShodanParser.g.resources
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\ShodanParser.Properties.Resources.resources
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\ShodanParser.csproj.GenerateResource.Cache
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\ShodanParser.exe
+c:\users\kalyp\documents\visual studio 2015\Projects\ShodanParser\ShodanParser\obj\Release\ShodanParser.pdb
