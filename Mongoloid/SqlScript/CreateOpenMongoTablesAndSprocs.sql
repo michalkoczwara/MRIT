@@ -192,8 +192,6 @@ BEGIN
 		IP, Port
 	FROM
 		tblShodanRecords
-	WHERE
-		IP in (SELECT DISTINCT(IP) FROM tblDatabases)
 	ORDER BY IP DESC
 END
 
