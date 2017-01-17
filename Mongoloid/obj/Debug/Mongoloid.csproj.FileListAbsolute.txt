@@ -84,7 +84,6 @@ C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Bson.xml
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Driver.xml
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Driver.Core.xml
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\Newtonsoft.Json.xml
-C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.csprojResolveAssemblyReference.cache
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\MainWindow.g.cs
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\App.g.cs
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid_Content.g.cs

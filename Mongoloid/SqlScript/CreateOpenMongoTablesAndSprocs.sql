@@ -33,6 +33,35 @@ CREATE TABLE [dbo].[tblRansomSchemas](
 ) ON [PRIMARY]
 
 GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[tblRansomSchemas]    Script Date: 1/16/2017 4:12:03 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('PLEASE_READ','PLEASE_READ','Bitcoin Address','Email','Info')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('README_MISSING_DATABASES','README_MISSING_DATABASES','NONE','mail','note')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('READ1','info','NONE','mail','text')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('WARNING','WARNING','NONE','email','note')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('ENCRYPTED','READ_ME','NONE','NONE','WARNING')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('PLEASE_READ_ME','PLEASE_READ_ME','Bitcoin Address','Email','info')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('README_YOU_DB_IS_INSECURE','README_YOU_DB_IS_INSECURE','BTC_ADDRESS','EMAIL','NOTE')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('README','bitcoin','Bitcoin Address','email','message')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('CONTACTME','CONTACTME','NONE','mail','note')
+INSERT INTO tblRansomSchemas (DatabaseName, CollectionName, BitcoinField, EmailField, NotesField)
+VALUES('PWNED_SECURE_YOUR_STUFF_SILLY','pwned','btcAddress','email','note')
+
+GO
 /****** Object:  Table [dbo].[tblShodanRecords]    Script Date: 1/16/2017 4:12:03 PM ******/
 SET ANSI_NULLS ON
 GO
