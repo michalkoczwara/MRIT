@@ -71,6 +71,18 @@ namespace Mongoloid
             });
         }
 
+        public static void IncrementControlValue(Dispatcher dispatcher, object parent, string controlName, int value)
+        {
+            dispatcher.Invoke(DispatcherPriority.Normal, (ThreadStart)delegate
+            {
+                var child = ((MainWindow)parent).FindName(controlName);
+                if (child is TextBox)
+                    ((TextBox)child).Text = (int.Parse(((TextBox)child).Text) + value).ToString();
+                if (child is Label)
+                    ((Label)child).Content = (int.Parse(((Label)child).Content.ToString()) + value).ToString();
+            });
+        }
+
         public static void SetControlEnabledState(Dispatcher dispatcher, object parent, string controlName, bool enabled)
         {
             dispatcher.Invoke(DispatcherPriority.Normal, (ThreadStart)delegate
