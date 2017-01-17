@@ -99,6 +99,7 @@ namespace Mongoloid
                 var threadCount = int.Parse(ThreadCount.Text);
                 var leftOver = hosts.Count % threadCount;
                 var countPerPage = (hosts.Count - leftOver) / threadCount;
+                _threadExecutors = new List<ThreadedExecutor>();
                 _executorThreads = new List<Thread>();
                 for (var thread = 0; thread < threadCount; thread++)
                 {

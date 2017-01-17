@@ -19,7 +19,7 @@
         </GroupBox>
         <GroupBox Header="Find Ransom Demands" Margin="10,109,10,0" Height="106" VerticalAlignment="Top">
             <Grid>
-                <Button x:Name="GetRansoms" Content="Get Ransoms" Margin="370,33,10,0" VerticalAlignment="Top" Click="btnGetRansoms_Click" Height="37" Width="107"/>
+                <Button x:Name="GetRansoms" Content="Get Ransoms" Margin="0,0,10,14" VerticalAlignment="Bottom" Click="btnGetRansoms_Click" Height="37" Width="107" HorizontalAlignment="Right"/>
                 <Label x:Name="TotalServersLabel" Content="Total Servers:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="99" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
                 <Label x:Name="TotalServers" Content="0" HorizontalAlignment="Left" Margin="114,10,0,0" VerticalAlignment="Top" Width="55" VerticalContentAlignment="Center"/>
                 <Label x:Name="RansomsFoundLabel" Content="Databases Found:" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>

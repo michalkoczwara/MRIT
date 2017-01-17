@@ -70,3 +70,29 @@ C:\Users\kalyp\Documents\Visual Studio 2017\Projects\ShodanParser\Mongoloid\obj\
 C:\Users\kalyp\Documents\Visual Studio 2017\Projects\ShodanParser\Mongoloid\obj\Debug\Mongoloid.csproj.GenerateResource.Cache
 C:\Users\kalyp\Documents\Visual Studio 2017\Projects\ShodanParser\Mongoloid\obj\Debug\Mongoloid.exe
 C:\Users\kalyp\Documents\Visual Studio 2017\Projects\ShodanParser\Mongoloid\obj\Debug\Mongoloid.pdb
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\Mongoloid.exe.config
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\Mongoloid.exe
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\Mongoloid.pdb
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\CsvHelper.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Bson.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Driver.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\CsvHelper.xml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Bson.xml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Driver.xml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.csprojResolveAssemblyReference.cache
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\MainWindow.g.cs
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\App.g.cs
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid_Content.g.cs
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid_MarkupCompile.cache
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid_MarkupCompile.lref
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\MainWindow.baml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.g.resources
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.Properties.Resources.resources
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.csproj.GenerateResource.Cache
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.exe
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.pdb

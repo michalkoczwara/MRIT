@@ -34,7 +34,8 @@ namespace Mongoloid.Classes
             foreach (var host in RansomDemands)
             {
                 var ransomDemands = MongoFunctions.GetRansomDemands(host.Ip, host.Port, RansomSchemas);
-                ThreadedFunctions.IncrementControlValue(ParentDispatcher, Parent, "RansomsFound");
+                for (var count = 0; count < ransomDemands.Count; count++)
+                    ThreadedFunctions.IncrementControlValue(ParentDispatcher, Parent, "RansomsFound");
                 if (ransomDemands == null || !ransomDemands.Any())
                     continue;
                 SqlFunctions.AddRansomDemands(ransomDemands);
