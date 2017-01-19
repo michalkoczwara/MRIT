@@ -95,3 +95,5 @@ C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.Properties.R
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.csproj.GenerateResource.Cache
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.exe
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.pdb
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\ManageSchemas.g.cs
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\ManageSchemas.baml

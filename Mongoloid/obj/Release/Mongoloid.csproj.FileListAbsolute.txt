@@ -47,3 +47,6 @@ C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Release\Mongoloid.Properties
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Release\Mongoloid.csproj.GenerateResource.Cache
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Release\Mongoloid.exe
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Release\Mongoloid.pdb
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Release\Mongoloid.csprojResolveAssemblyReference.cache
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Release\ManageSchemas.g.cs
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Release\ManageSchemas.baml

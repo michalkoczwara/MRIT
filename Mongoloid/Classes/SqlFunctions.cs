@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -76,7 +77,9 @@ namespace Mongoloid
                     using (var sqlReader = sqlCommand.ExecuteReader())
                     {
                         while (sqlReader.Read())
-                            output.Add(new RansomSchema(sqlReader["DatabaseName"].ToString(), sqlReader["CollectionName"].ToString(), sqlReader["BitcoinField"].ToString(), sqlReader["EmailField"].ToString(), sqlReader["NotesField"].ToString()));
+                        {
+                            output.Add(new RansomSchema(sqlReader["DatabaseName"].ToString(), sqlReader["CollectionName"].ToString(), sqlReader["BitcoinField"].ToString(), sqlReader["EmailField"].ToString(), sqlReader["NotesField"].ToString()) { ID = int.Parse(sqlReader["ID"].ToString()) });
+                        }
                     }
                 }
             }
@@ -162,6 +165,63 @@ namespace Mongoloid
                             sqlCommand.Parameters.Add(new SqlParameter("RansomNote", ransomDemand.RansomText ?? string.Empty));
                             sqlCommand.ExecuteNonQuery();
                         }
+                    }
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Delete a ransom schema from the SQL database.
+        /// </summary>
+        /// <param name="ransomSchema">The ransom schema object you want to delete</param>
+        /// <returns></returns>
+        public static bool DeleteRansomSchema(RansomSchema ransomSchema)
+        {
+            try
+            {
+                using (var sqlConnection = new SqlConnection(Constants.SqlConnectionString))
+                {
+                    sqlConnection.Open();
+                    using (var sqlCommand = new SqlCommand("DeleteRansomSchema", sqlConnection) { CommandType = CommandType.StoredProcedure })
+                    {
+                        sqlCommand.Parameters.Add(new SqlParameter("ID", ransomSchema.ID));
+                        sqlCommand.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Add a new ransom schema to the SQL database or update an existing one.
+        /// </summary>
+        /// <param name="ransomSchema">The ransom schema object you want to add.</param>
+        /// <returns></returns>
+        public static bool AddUpdateRansomSchema(RansomSchema ransomSchema)
+        {
+            try
+            {
+                using (var sqlConnection = new SqlConnection(Constants.SqlConnectionString))
+                {
+                    sqlConnection.Open();
+                    using (var sqlCommand = new SqlCommand("AddRansomSchema", sqlConnection) { CommandType = CommandType.StoredProcedure })
+                    {
+                        sqlCommand.Parameters.Add(new SqlParameter("DatabaseName", ransomSchema.DatabaseName));
+                        sqlCommand.Parameters.Add(new SqlParameter("CollectionName", ransomSchema.CollectionName));
+                        sqlCommand.Parameters.Add(new SqlParameter("EmailField", ransomSchema.EmailField ?? "NONE"));
+                        sqlCommand.Parameters.Add(new SqlParameter("BitcoinField", ransomSchema.BitcoinField ?? "NONE"));
+                        sqlCommand.Parameters.Add(new SqlParameter("NotesField", ransomSchema.NotesField ?? "NONE"));
+                        sqlCommand.Parameters.Add(new SqlParameter("ID", ransomSchema.ID));
+                        sqlCommand.ExecuteNonQuery();
                     }
                 }
                 return true;

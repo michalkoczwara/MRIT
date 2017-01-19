@@ -141,5 +141,11 @@ namespace Mongoloid
             var regex = new Regex(Constants.NumberValidatorRegex);
             e.Handled = regex.IsMatch(e.Text);
         }
+
+        private void ManageRansomSchemas_Click(object sender, RoutedEventArgs e)
+        {
+            var manageSchemas = new ManageSchemas();
+            manageSchemas.ShowDialog();
+        }
     }
 }

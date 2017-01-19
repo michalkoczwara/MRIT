@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mongoloid"
         mc:Ignorable="d"
-        Title="Mongoloid" Height="285.98" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Mongoloid" Height="310.593" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <GroupBox Header="Import Shodan Records" Margin="10,10,10,0" Height="94" VerticalAlignment="Top">
             <Grid>
@@ -32,6 +32,7 @@
         </GroupBox>
         <Label x:Name="CurrentStatusLabel" Content="Status:" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="55" HorizontalContentAlignment="Right"/>
         <Label x:Name="CurrentStatus" Content="Idle" Margin="70,0,10,10" VerticalAlignment="Bottom"/>
+        <Button x:Name="ManageRansomSchemas" Content="Manage Ransom Schemas" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="167" Click="ManageRansomSchemas_Click"/>
 
     </Grid>
 </Window>

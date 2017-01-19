@@ -2,11 +2,13 @@
 {
     internal class RansomSchema
     {
+        public int ID { get; set; }
         public string DatabaseName { get; set; }
         public string CollectionName { get; set; }
         public string BitcoinField { get; set; }
         public string EmailField { get; set; }
         public string NotesField { get; set; }
+        public bool IsSelected { get; set; }
 
         public RansomSchema() { }
 
