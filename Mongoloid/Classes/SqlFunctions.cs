@@ -231,5 +231,88 @@ namespace Mongoloid
                 return false;
             }
         }
+
+        /// <summary>
+        /// Get a list of unique email addresses and ransom counts for reporting.
+        /// </summary>
+        /// <returns></returns>
+        public static List<RansomDemand> GetRansomsByEmailAddresses()
+        {
+            var output = new List<RansomDemand>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(Constants.SqlConnectionString))
+                {
+                    sqlConnection.Open();
+                    using (var sqlCommand = new SqlCommand("GetRansomEmailAddresses", sqlConnection) { CommandType = CommandType.StoredProcedure })
+                    using (var sqlReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlReader.Read())
+                            output.Add(new RansomDemand { Email = sqlReader["Attacker"].ToString(), RansomText = sqlReader["Victims"].ToString() });
+                    }
+                }
+            }
+            catch
+            {
+                //todo: Implement global error handling.
+            }
+            return output;
+        }
+
+        /// <summary>
+        /// Get a list of unique bitcoin addresses for each attacker.
+        /// </summary>
+        /// <returns></returns>
+        public static List<RansomDemand> GetBtcWalletsByEmailAddresses()
+        {
+            var output = new List<RansomDemand>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(Constants.SqlConnectionString))
+                {
+                    sqlConnection.Open();
+                    using (var sqlCommand = new SqlCommand("GetBtcWalletsByEmailAddresses", sqlConnection) { CommandType = CommandType.StoredProcedure })
+                    using (var sqlReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlReader.Read())
+                            output.Add(new RansomDemand { Email = sqlReader["Attacker"].ToString(), RansomText = sqlReader["BTCWallets"].ToString() });
+                    }
+                }
+            }
+            catch
+            {
+                //todo: Implement global error handling.
+            }
+            return output;
+        }
+
+        //ViewRansomsVsHosts
+        public static string[][] GetRansomsVsHosts()
+        {
+            try
+            {
+                using (var sqlConnection = new SqlConnection(Constants.SqlConnectionString))
+                {
+                    sqlConnection.Open();
+                    using (var sqlCommand = new SqlCommand("GetRansomsVsHosts", sqlConnection) { CommandType = CommandType.StoredProcedure })
+                    using (var sqlReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlReader.Read())
+                        {
+                            return new string[][]
+                            {
+                                new string[] { "Hosts", sqlReader["HostCount"].ToString() },
+                                new string[] { "Ransom Demands", sqlReader["RansomCount"].ToString() }
+                            };
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                //todo: Implement global error handling.
+            }
+            return new string[][] {new string[]{}, new string[]{}};
+        }
     }
 }

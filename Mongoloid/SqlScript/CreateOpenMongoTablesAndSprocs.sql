@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [OpenMongo]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  Database [OpenMongo]    Script Date: 1/21/2017 1:08:01 AM ******/
 CREATE DATABASE [OpenMongo]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -77,12 +77,12 @@ EXEC sys.sp_db_vardecimal_storage_format N'OpenMongo', N'ON'
 GO
 USE [OpenMongo]
 GO
-/****** Object:  User [OpenMongoUser]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  User [OpenMongoUser]    Script Date: 1/21/2017 1:08:01 AM ******/
 CREATE USER [OpenMongoUser] FOR LOGIN [OpenMongoUser] WITH DEFAULT_SCHEMA=[dbo]
 GO
 ALTER ROLE [db_owner] ADD MEMBER [OpenMongoUser]
 GO
-/****** Object:  Table [dbo].[tblRansomRecords]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  Table [dbo].[tblRansomRecords]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -101,7 +101,7 @@ CREATE TABLE [dbo].[tblRansomRecords](
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  Table [dbo].[tblRansomSchemas]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  Table [dbo].[tblRansomSchemas]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -142,7 +142,7 @@ VALUES('PWNED_SECURE_YOUR_STUFF_SILLY','pwned','btcAddress','email','note')
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  Table [dbo].[tblShodanRecords]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  Table [dbo].[tblShodanRecords]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -164,7 +164,7 @@ CREATE TABLE [dbo].[tblShodanRecords](
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  StoredProcedure [dbo].[AddRansomDemand]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[AddRansomDemand]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -195,7 +195,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[AddRansomSchema]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[AddRansomSchema]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -244,7 +244,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[AddShodanRecord]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[AddShodanRecord]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -273,7 +273,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[CheckIfMongoInstanceExists]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[CheckIfMongoInstanceExists]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -297,7 +297,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[CheckIfRansomDemandExists]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[CheckIfRansomDemandExists]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -330,7 +330,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteRansomSchema]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[DeleteRansomSchema]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -355,7 +355,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[GetAllIps]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetAllIps]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -384,7 +384,29 @@ END
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[GetIpsAndPorts]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetBtcWalletsByEmailAddresses]    Script Date: 1/21/2017 1:08:01 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[GetBtcWalletsByEmailAddresses]
+	-- Add the parameters for the stored procedure here
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+    -- Insert statements for procedure here
+	SELECT [Email] AS Attacker, COUNT(DISTINCT(BitcoinWallet)) as BTCWallets FROM tblRansomRecords GROUP BY [Email] ORDER BY [Email] 
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[GetIpsAndPorts]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -402,7 +424,29 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[GetRansomSchemas]    Script Date: 1/19/2017 1:51:38 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetRansomEmailAddresses]    Script Date: 1/21/2017 1:08:01 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[GetRansomEmailAddresses]
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT [Email] as Attacker, COUNT(IP) as Victims from tblRansomRecords group by [Email] ORDER BY [Email]
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[GetRansomSchemas]    Script Date: 1/21/2017 1:08:01 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -434,8 +478,30 @@ BEGIN
 END
 
 GO
+/****** Object:  StoredProcedure [dbo].[GetRansomsVsHosts]    Script Date: 1/21/2017 1:08:01 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[GetRansomsVsHosts] 
+	-- Add the parameters for the stored procedure here
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT COUNT(DISTINCT(IP)) AS HostCount, COUNT(DISTINCT([IP]+[Port]+[DatabaseName])) AS RansomCount FROM tblRansomRecords
+END
+
+GO
 USE [master]
 GO
 ALTER DATABASE [OpenMongo] SET  READ_WRITE 
 GO
-

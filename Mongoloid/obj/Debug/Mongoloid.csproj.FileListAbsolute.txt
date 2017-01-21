@@ -97,3 +97,11 @@ C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.exe
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\Mongoloid.pdb
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\ManageSchemas.g.cs
 C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\ManageSchemas.baml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\LiveCharts.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\LiveCharts.pdb
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\LiveCharts.xml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\ReportViewer.g.cs
+C:\Users\kalyp\Source\Repos\Mongoloid\Mongoloid\obj\Debug\ReportViewer.baml

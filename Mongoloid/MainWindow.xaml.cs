@@ -147,5 +147,11 @@ namespace Mongoloid
             var manageSchemas = new ManageSchemas();
             manageSchemas.ShowDialog();
         }
+
+        private void ViewReports_Click(object sender, RoutedEventArgs e)
+        {
+            var viewReports = new ReportViewer();
+            viewReports.ShowDialog();
+        }
     }
 }
