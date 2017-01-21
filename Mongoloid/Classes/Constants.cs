@@ -1,4 +1,4 @@
-﻿namespace Mongoloid
+﻿namespace MRIT
 {
     internal class Constants
     {

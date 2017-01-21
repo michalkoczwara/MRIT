@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Threading;
 
-namespace Mongoloid.Classes
+namespace MRIT.Classes
 {
     internal class ThreadedExecutor
     {

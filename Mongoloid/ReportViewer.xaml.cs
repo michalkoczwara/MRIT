@@ -2,7 +2,7 @@
 using LiveCharts.Wpf;
 using System.Windows;
 
-namespace Mongoloid
+namespace MRIT
 {
     /// <summary>
     /// Interaction logic for ReportViewer.xaml

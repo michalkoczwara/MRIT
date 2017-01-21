@@ -2,7 +2,7 @@
 using MongoDB.Driver;
 using System.Collections.Generic;
 
-namespace Mongoloid
+namespace MRIT
 {
     internal class MongoFunctions
     {

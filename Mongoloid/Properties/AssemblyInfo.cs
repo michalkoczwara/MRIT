@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Mongoloid")]
+[assembly: AssemblyTitle("MRIT")]
 [assembly: AssemblyDescription("MongoDB ransom crawler")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Kalypto (in)Security")]
-[assembly: AssemblyProduct("Mongoloid")]
+[assembly: AssemblyProduct("MRIT")]
 [assembly: AssemblyCopyright("Copyright © Morgan Bleck 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

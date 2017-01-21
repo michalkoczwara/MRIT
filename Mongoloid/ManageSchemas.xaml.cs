@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Mongoloid
+namespace MRIT
 {
     /// <summary>
     /// Interaction logic for ManageSchemas.xaml

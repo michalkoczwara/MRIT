@@ -1,4 +1,4 @@
-﻿namespace Mongoloid
+﻿namespace MRIT
 {
     public class ShodanRecord
     {

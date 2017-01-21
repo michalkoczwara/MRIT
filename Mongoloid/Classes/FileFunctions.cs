@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Mongoloid
+namespace MRIT
 {
     /// <summary>
     /// Used for reading the Shodan export to CSV.
