@@ -17,6 +17,8 @@
                 <Button x:Name="ViewRansomsByEmail" Content="View Infections by Email" Margin="10,10,10,10" VerticalAlignment="Top" Height="40" Click="ViewRansomsByEmail_Click"></Button>
                 <Button x:Name="ViewBtcWalletsByEmail" Content="View BTC Wallets by Email" Margin="10,10,10,10" VerticalAlignment="Top" Height="40" Click="ViewBtcWalletsByEmail_Click"></Button>
                 <Button x:Name="ViewRansomsVsHosts" Content="Ransoms vs Hosts" Margin="10,10,10,10" VerticalAlignment="Top" Height="40" Click="ViewRansomsVsHosts_Click"></Button>
+                <Button x:Name="ViewAllRansoms" Content="View All Ransoms" Margin="10,10,10,10" VerticalAlignment="Top" Height="40" Click="ViewAllRansoms_Click"></Button>
+                <!--<Button x:Name="ViewMongoDbServers" Content="View All MongoDB Servers" Margin="10,10,10,10" VerticalAlignment="Top" Height="40" Click="ViewAllMongoDbServers_Click"></Button>-->
             </StackPanel>
         </Grid>
         <Grid Margin="20,20,20,20" Grid.Column="1">
@@ -30,6 +32,8 @@
                     <lvc:DefaultTooltip SelectionMode="OnlySender" />
                 </lvc:PieChart.DataTooltip>
             </lvc:PieChart>
+            <ListView x:Name="RansomRecordsList" Grid.Row="1" Margin="10,10,10,10">
+            </ListView>
         </Grid>
     </Grid>
 </Window>

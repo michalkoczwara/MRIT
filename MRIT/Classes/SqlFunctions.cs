@@ -286,6 +286,42 @@ namespace MRIT
             return output;
         }
 
+        /// <summary>
+        /// Get a list of all ransom demands found.
+        /// </summary>
+        /// <returns></returns>
+        public static List<RansomDemand> GetAllRansoms()
+        {
+            var output = new List<RansomDemand>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(Constants.SqlConnectionString))
+                {
+                    sqlConnection.Open();
+                    using (var sqlCommand = new SqlCommand("GetAllRansoms", sqlConnection) { CommandType = CommandType.StoredProcedure })
+                    using (var sqlReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlReader.Read())
+                            output.Add(new RansomDemand
+                            {
+                                Ip = sqlReader["IP"].ToString(),
+                                Port = int.Parse(sqlReader["Port"].ToString()),
+                                DatabaseName = sqlReader["DatabaseName"].ToString(),
+                                Email = sqlReader["Email"].ToString(),
+                                BitcoinWallet = sqlReader["BitcoinWallet"].ToString(),
+                                RansomText = sqlReader["RansomNote"].ToString()
+                            });
+                    }
+                }
+            }
+            catch
+            {
+                //todo: Implement global error handling.
+            }
+            return output;
+        }
+
+
         //ViewRansomsVsHosts
         public static string[][] GetRansomsVsHosts()
         {
